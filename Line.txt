@@ -1,0 +1,29 @@
+/**
+ * Created by admin on 23.02.2017.
+ */
+public class Line {
+
+    Point pointStart;
+    Point pointEnd;
+    private double length;
+
+    public Line(Point start, Point end) {
+        this.pointStart = start;
+        this.pointStart = end;
+
+
+    }
+
+    public double getLine() {
+
+
+        return Math.sqrt(Math.pow(pointEnd.x - pointStart.x, 2) +
+                Math.pow(pointEnd.y - pointStart.y, 2));
+    }
+
+
+    public double getLength() {
+        return length;
+    }
+}
+
